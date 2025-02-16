@@ -17,7 +17,11 @@ export const RecordsWrapper = ({ isOpen, title, children }: Props) => {
       <div
         className={`text-gray-default flex h-7 items-center pr-2 font-semibold ${isOpen ? "justify-between" : "justify-end"}`}
       >
-        <p className={`pb-1 pl-4 opacity-60 ${!isOpen && "hidden"}`}>{title}</p>
+        <p
+          className={`line-clamp-1 pb-1 pl-4 opacity-60 ${!isOpen && "hidden"}`}
+        >
+          {title}
+        </p>
         <button
           className="hover:bg-gray-brighten bg-main text-gray-default transition-[background-color, color] flex h-6 w-6 cursor-pointer items-center justify-center rounded-md duration-300 hover:text-white"
           onClick={() => handleExpanded()}

@@ -11,7 +11,7 @@ export const SvgPlus = () => {
         <path
           d="M18.361 11.259a.75.75 0 01-.009 1.484l-.102.007h-5.5v5.5a.75.75 0 01-1.491.111l-.009-.11V12.75h-5.5l-.111-.009a.75.75 0 01.009-1.484l.102-.007h5.5v-5.5a.75.75 0 011.491-.111l.009.11v5.501h5.5l.111.009z"
           fill="currentcolor"
-          fill-rule="evenodd"
+          fillRule="evenodd"
         ></path>
       </svg>
     </div>

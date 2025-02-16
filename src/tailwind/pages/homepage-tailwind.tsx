@@ -1,12 +1,11 @@
 import { Header } from "../components/header";
-import { Sidebar } from "../components/sidebar";
+import { Main } from "../components/main/main";
 
 export const HomepageTailwind = () => {
   return (
     <>
       <Header />
-      <Sidebar />
-      <main>main</main>
+      <Main />
     </>
   );
 };

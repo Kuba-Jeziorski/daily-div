@@ -1,16 +1,14 @@
 @import "tailwindcss";
 
 @theme {
+  --color-main: #0e1217;
+  --color-border: #2d323b;
   --color-gray-default: #a8b3cf;
+  --color-gray-default-opacity-60: #a8b3cf99;
   --color-gray-dull: #5ca8b3cf;
   --color-gray-brighten: #2b313a;
-
-  --color-border: #2d323b;
-
-  --color-main: #0e1217;
-
+  --color-listing-element: rgb(28, 31, 38);
   --color-violet-default: #7147ed;
-
   --color-pink-button: #fc538d;
   --color-pink-button-hovered: #fd619d;
   --color-pink-button-shadow: #fc4079a3;
@@ -25,6 +23,21 @@
   .no-scrollbar {
     scrollbar-width: none;
   }
+
+  ::-webkit-scrollbar {
+    background-color: rgb(14, 18, 23);
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #a8b3cf;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:active,
+  ::-webkit-scrollbar-thumb:hover {
+    background: white;
+  }
 }
 
 * {
@@ -38,12 +51,3 @@
     -apple-system,
     BlinkMacSystemFont;
 }
-
-/* .test {
-  max-width: 240px;
-  transition: max-width 0.3s;
-}
-
-.test.closed {
-  max-width: 100px;
-} */

@@ -31,3 +31,7 @@ export const SIDEBAR_ADVERTISE_LABEL = "Advertise";
 export const SIDEBAR_DOCS_LABEL = "Docs";
 export const SIDEBAR_CHANGELOG_LABEL = "Changelog";
 export const SIDEBAR_FEEDBACK_LABEL = "Feedback";
+
+export const QUERY_NAME = "technology";
+export const NUMBER_OF_PICTURES = 10;
+export const BASE_URL = "https://api.unsplash.com";
