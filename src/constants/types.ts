@@ -3,6 +3,11 @@ export type PictureResult = {
   alt_description: string;
   description: string;
   likes: number;
+  user: {
+    profile_image: {
+      small: string;
+    };
+  };
   urls: {
     small: string;
   };

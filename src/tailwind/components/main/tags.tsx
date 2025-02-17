@@ -11,7 +11,7 @@ export const Tags = ({ tags }: Props) => {
   }
 
   return (
-    <ul className="flex items-center gap-2 px-2 pb-2">
+    <ul className="!mt-2 flex items-center gap-2 px-2 pb-2">
       {tags.map((tag) => {
         return (
           <p

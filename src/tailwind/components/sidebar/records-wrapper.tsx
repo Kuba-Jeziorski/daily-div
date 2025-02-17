@@ -27,7 +27,7 @@ export const RecordsWrapper = ({ isOpen, title, children }: Props) => {
           onClick={() => handleExpanded()}
         >
           <div
-            className={`rounded-full transition duration-300 ${isExpanded ? "" : "rotate-180"}`}
+            className={`rounded-full transition duration-300 ${!isOpen && !isExpanded && "hidden"} ${isExpanded ? "" : "rotate-180"}`}
           >
             <SvgChevron />
           </div>

@@ -7,11 +7,23 @@
   --color-gray-default-opacity-60: #a8b3cf99;
   --color-gray-dull: #5ca8b3cf;
   --color-gray-brighten: #2b313a;
+  --color-green-default: #39e58c;
+  --color-green-default-dull: #1ddc6f3d;
   --color-listing-element: rgb(28, 31, 38);
-  --color-violet-default: #7147ed;
+  --color-violet-deep: #7147ed;
   --color-pink-button: #fc538d;
   --color-pink-button-hovered: #fd619d;
   --color-pink-button-shadow: #fc4079a3;
+  --color-red-default: #e04337;
+  --color-red-default-dull: #d52b203d;
+  --color-orange-default: #ff8e3b;
+  --color-orange-default-dull: #ff7a2b52;
+
+  --color-violet-default: #ce3df3;
+  --color-violet-default-dull: #e669fb33;
+
+  --color-turquoise-default: #2cdce6;
+  --color-turquoise-default-dull: #0dcfdc3d;
 
   --pink-button-shadow: 0 14px 14px -6px var(--color-pink-button-shadow);
 }

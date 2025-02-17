@@ -54,7 +54,7 @@ export const Sidebar = () => {
 
   return (
     <aside
-      className={`bg-main border-border fixed overflow-hidden border-r transition-[width] duration-300 ${isOpen ? "w-60" : "w-11"}`}
+      className={`bg-main border-border fixed h-full overflow-hidden border-r transition-[width] duration-300 ${isOpen ? "w-60" : "w-11"}`}
     >
       <div className="scrollbar-none no-scrollbar flex h-full flex-col overflow-y-scroll">
         <div

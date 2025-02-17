@@ -4,15 +4,8 @@ import { LoadingIndicator } from "./loading-indicator";
 import { Observer } from "./observer";
 
 export const Listing = () => {
-  const {
-    data,
-    // isLoading,
-    // isFetching,
-    isError,
-    fetchNextPage,
-    hasNextPage,
-    isFetchingNextPage,
-  } = useInfinitePicturesQuery();
+  const { data, isError, fetchNextPage, hasNextPage, isFetchingNextPage } =
+    useInfinitePicturesQuery();
 
   if (!data) {
     return <p>No data</p>;
@@ -38,12 +31,6 @@ export const Listing = () => {
           isFetchingNextPage={isFetchingNextPage}
         />
       </Observer>
-
-      {/* {(isLoading || isFetching) && (
-        <div className="loading-block">
-          <div className="loader-dots"></div>
-        </div>
-      )} */}
 
       {isError && <div>Error fetch posts</div>}
     </>
