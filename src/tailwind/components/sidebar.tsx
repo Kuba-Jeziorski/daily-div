@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import {
   SIDEBAR_ADVERTISE_LABEL,
   SIDEBAR_CHANGELOG_LABEL,
@@ -47,11 +47,12 @@ import { SvgSources } from "./svgs/svg-sources";
 import { SvgSubmitALink } from "./svgs/svg-submit-a-link";
 import { SvgTags } from "./svgs/svg-tags";
 
-export const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+type Props = {
+  isOpen: boolean;
+  handleOpen: () => void;
+};
 
-  const handleOpen = () => setIsOpen(!isOpen);
-
+export const Sidebar = ({ isOpen, handleOpen }: Props) => {
   return (
     <aside
       className={`bg-main border-border fixed h-full overflow-hidden border-r transition-[width] duration-300 ${isOpen ? "w-60" : "w-11"}`}

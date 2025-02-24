@@ -18,14 +18,14 @@
   --color-red-default-dull: #d52b203d;
   --color-orange-default: #ff8e3b;
   --color-orange-default-dull: #ff7a2b52;
-
   --color-violet-default: #ce3df3;
   --color-violet-default-dull: #e669fb33;
-
   --color-turquoise-default: #2cdce6;
   --color-turquoise-default-dull: #0dcfdc3d;
 
   --pink-button-shadow: 0 14px 14px -6px var(--color-pink-button-shadow);
+
+  --breakpoint-3xl: 120rem;
 }
 
 @layer utilities {
@@ -54,10 +54,6 @@
 
 * {
   box-sizing: border-box;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
   font-family:
     system-ui,
     -apple-system,

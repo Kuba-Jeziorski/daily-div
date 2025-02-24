@@ -65,7 +65,7 @@ export const ListingElement = ({ image }: Props) => {
           <div className="mt-auto">
             <Tags tags={tags} />
           </div>
-          <div className="relative">
+          <div className="relative overflow-hidden rounded-xl">
             <CoverImg src_small={src_small} alt_description={alt_description} />
             <div className="absolute top-0 left-0 h-full w-full bg-slate-950 opacity-40"></div>
           </div>

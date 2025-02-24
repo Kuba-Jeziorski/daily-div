@@ -7,7 +7,7 @@ import { SvgLink } from "./svg-link";
 
 export const Header = () => {
   return (
-    <header className="border-border bg-main fixed z-10 flex h-16 w-full justify-between border-b px-3 py-3">
+    <header className="border-border bg-main fixed z-10 container flex h-16 w-full max-w-full justify-between border-b px-3 py-3">
       <div className="flex items-center">
         <img
           className="max-h-4"

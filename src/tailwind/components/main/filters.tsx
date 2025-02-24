@@ -6,7 +6,7 @@ import { SvgSort } from "../svgs/svg-sort";
 
 export const Filters = () => {
   return (
-    <div className="flex items-center gap-3">
+    <div className="3xl:mx-0 3xl:max-w-full mx-auto flex max-w-full items-center gap-3 xl:max-w-200 2xl:max-w-320">
       <SvgLink svg={<SvgFilter />} to="#" title="Feed settings" />
       <SvgLink svg={<SvgPlusBig />} to="#" title="Shortcuts" />
       <SvgLink svg={<SvgSort />} to="#" />
@@ -16,5 +16,3 @@ export const Filters = () => {
     </div>
   );
 };
-
-// SvgLink

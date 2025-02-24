@@ -9,7 +9,7 @@ export const CoverImg = ({ src_small, alt_description }: Props) => {
       src={src_small}
       alt={alt_description ?? ""}
       loading="lazy"
-      className="aspect-video rounded-xl object-cover"
+      className="aspect-video object-cover"
     />
   );
 };

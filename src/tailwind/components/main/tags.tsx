@@ -11,11 +11,11 @@ export const Tags = ({ tags }: Props) => {
   }
 
   return (
-    <ul className="!mt-2 flex items-center gap-2 px-2 pb-2">
+    <ul className="group mt-2 flex items-center gap-2 px-2 pb-2">
       {tags.map((tag) => {
         return (
           <p
-            className="border-border text-gray-default-opacity-60 rounded-[8px] border px-2 py-1 text-xs"
+            className="border-border text-gray-default-opacity-60 rounded-[8px] border px-2 py-1 text-xs 2xl:block [&:nth-child(n+3)]:hidden"
             key={tag}
           >
             #{tag}
@@ -23,7 +23,7 @@ export const Tags = ({ tags }: Props) => {
         );
       })}
       {extraTagsNumber > 0 ? (
-        <p className="border-border text-gray-default-opacity-60 rounded-[8px] border px-2 py-1 text-xs">
+        <p className="border-border text-gray-default-opacity-60 hidden rounded-[8px] border px-2 py-1 text-xs 2xl:block">
           +{extraTagsNumber}
         </p>
       ) : (
