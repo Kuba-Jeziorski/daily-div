@@ -9,7 +9,7 @@ export const Title = ({ description, alt_description }: Props) => {
   }
 
   return (
-    <h3 className="line-clamp-3 text-xl font-bold break-words text-white">
+    <h3 className="xs:text-base xs:h-12 line-clamp-2 h-10 text-sm font-bold text-balance break-words text-white md:h-15 md:text-lg lg:line-clamp-3 lg:h-auto lg:text-xl">
       {description ?? alt_description}
     </h3>
   );

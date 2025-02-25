@@ -6,7 +6,7 @@ export const SvgUpgrade = () => {
       viewBox="0 0 24 24"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
-      className="pointer-events-none mr-1 -ml-2 h-7 w-7 text-base"
+      className="pointer-events-none mr-0 -ml-2 h-7 w-7 text-base sm:mr-1"
     >
       <path
         fillRule="evenodd"

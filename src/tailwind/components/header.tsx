@@ -7,7 +7,7 @@ import { SvgLink } from "./svg-link";
 
 export const Header = () => {
   return (
-    <header className="border-border bg-main fixed z-10 container flex h-16 w-full max-w-full justify-between border-b px-3 py-3">
+    <header className="border-border bg-main xs:h-16 fixed z-10 container flex h-30 w-full max-w-full flex-wrap justify-between border-b px-3 py-3">
       <div className="flex items-center">
         <img
           className="max-h-4"
@@ -17,9 +17,17 @@ export const Header = () => {
       </div>
       <div className="flex items-center gap-3">
         <NavigationUpgradeLink to="#" />
+        <div className="xs:flex hidden">
+          <SvgLink to="#" svg={<SvgCompanion />} />
+        </div>
+        <div className="xs:flex hidden">
+          <SvgLink to="#" svg={<SvgNotification />} />
+        </div>
+        <NavigationRightContainer />
+      </div>
+      <div className="xs:hidden flex w-full items-center justify-end gap-3">
         <SvgLink to="#" svg={<SvgCompanion />} />
         <SvgLink to="#" svg={<SvgNotification />} />
-        <NavigationRightContainer />
       </div>
     </header>
   );

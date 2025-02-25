@@ -35,6 +35,8 @@ export const SIDEBAR_FEEDBACK_LABEL = "Feedback";
 export const LISTING_ELEMENT_DISCUSSION_NUMBER =
   Math.floor(Math.random() * 10) + 1;
 
+export const MOBILE_RESOLUTION_VALUE = 768;
+
 export const QUERY_NAME = "technology";
 export const NUMBER_OF_PICTURES = 10;
 export const BASE_URL = "https://api.unsplash.com";

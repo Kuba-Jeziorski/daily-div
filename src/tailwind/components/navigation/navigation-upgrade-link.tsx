@@ -11,10 +11,10 @@ export const NavigationUpgradeLink = ({ to }: Props) => {
   return (
     <Link
       to={to}
-      className="bg-pink-button mr-1 flex h-10 items-center rounded-xl px-5 text-base font-bold transition-shadow duration-300 hover:shadow-[var(--pink-button-shadow)]"
+      className="bg-pink-button mr-0 flex h-10 items-center rounded-xl pr-2 pl-4 text-base font-bold transition-shadow duration-300 hover:shadow-[var(--pink-button-shadow)] sm:mr-1 sm:pr-5 sm:pl-5"
     >
       <SvgUpgrade />
-      <p className="text-sm">{UPGRADE_LABEL}</p>
+      <p className="hidden text-sm sm:block">{UPGRADE_LABEL}</p>
     </Link>
   );
 };

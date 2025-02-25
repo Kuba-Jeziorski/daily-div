@@ -50,40 +50,40 @@ export const ListingElement = ({ image }: Props) => {
   const handleSaved = () => setIsSaved(!isSaved);
 
   return (
-    <article className="border-border bg-listing-element hover:border-gray-default-opacity-60 min-h-96 rounded-2xl border transition-[border] duration-300">
+    <article className="border-border bg-listing-element hover:border-gray-default-opacity-60 rounded-2xl border transition-[border] duration-300 lg:min-h-96">
       <Link
         to="#"
-        className="flex h-full w-full flex-col justify-between p-2"
+        className="flex h-full w-full flex-wrap justify-between p-2 lg:flex-col"
         data-id={id}
       >
-        <div className="px-2">
+        <div className="max-w-full px-2 md:max-w-1/2 lg:max-w-full">
           <UserPortrait user_img={user_img} />
           <Title description={description} alt_description={alt_description} />
         </div>
 
-        <div>
-          <div className="mt-auto">
-            <Tags tags={tags} />
-          </div>
-          <div className="relative overflow-hidden rounded-xl">
-            <CoverImg src_small={src_small} alt_description={alt_description} />
-            <div className="absolute top-0 left-0 h-full w-full bg-slate-950 opacity-40"></div>
-          </div>
-          <div className="!mt-2 flex h-8 justify-between">
-            <div className="bg-gray-brighten flex h-full rounded-xl">
-              <div className="flex h-full items-center">
-                <Like
-                  handleFunction={handleArrowUp}
-                  likes={likes}
-                  state={isArrowUp}
-                />
-                <Dislike handleFunction={handleArrowDown} state={isArrowDown} />
-              </div>
+        <div className="mt-auto">
+          <Tags tags={tags} />
+        </div>
+
+        <div className="relative mt-auto hidden w-45 overflow-hidden rounded-xl md:flex lg:mt-0 lg:block lg:w-full">
+          <CoverImg src_small={src_small} alt_description={alt_description} />
+          <div className="absolute top-0 left-0 h-full w-full bg-slate-950 opacity-40"></div>
+        </div>
+
+        <div className="mt-6 flex h-8 w-full justify-items-start gap-3 lg:mt-2 lg:justify-between lg:gap-0">
+          <div className="bg-gray-brighten flex h-full rounded-xl">
+            <div className="flex h-full items-center">
+              <Like
+                handleFunction={handleArrowUp}
+                likes={likes}
+                state={isArrowUp}
+              />
+              <Dislike handleFunction={handleArrowDown} state={isArrowDown} />
             </div>
-            <Discussion />
-            <Bookmark handleFunction={handleSaved} state={isSaved} />
-            <TheLink />
           </div>
+          <Discussion />
+          <Bookmark handleFunction={handleSaved} state={isSaved} />
+          <TheLink />
         </div>
       </Link>
     </article>

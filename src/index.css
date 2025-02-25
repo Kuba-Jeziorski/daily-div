@@ -26,6 +26,7 @@
   --pink-button-shadow: 0 14px 14px -6px var(--color-pink-button-shadow);
 
   --breakpoint-3xl: 120rem;
+  --breakpoint-xs: 25rem;
 }
 
 @layer utilities {

@@ -1,5 +1,6 @@
-// import { useState } from "react";
+import React from "react";
 import {
+  MOBILE_RESOLUTION_VALUE,
   SIDEBAR_ADVERTISE_LABEL,
   SIDEBAR_CHANGELOG_LABEL,
   SIDEBAR_CUSTOM_FEED_LABEL,
@@ -49,10 +50,18 @@ import { SvgTags } from "./svgs/svg-tags";
 
 type Props = {
   isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
   handleOpen: () => void;
 };
 
-export const Sidebar = ({ isOpen, handleOpen }: Props) => {
+export const Sidebar = ({ isOpen, setIsOpen, handleOpen }: Props) => {
+  const windowWidth = window.innerWidth;
+  const isMobileResolution = windowWidth <= MOBILE_RESOLUTION_VALUE;
+
+  if (isMobileResolution) {
+    setIsOpen(false);
+  }
+
   return (
     <aside
       className={`bg-main border-border fixed h-full overflow-hidden border-r transition-[width] duration-300 ${isOpen ? "w-60" : "w-11"}`}
@@ -67,7 +76,7 @@ export const Sidebar = ({ isOpen, handleOpen }: Props) => {
             {SIDEBAR_TITLE_MENU}
           </p>
           <button
-            className={`text-gray-default hover:bg-gray-brighten bg-main transition-[background-color, color, rotate] flex cursor-pointer justify-center rounded-xl p-1 duration-300 hover:text-white ${isOpen ? "" : "rotate-y-180"}`}
+            className={`text-gray-default hover:bg-gray-brighten bg-main transition-[background-color, color, rotate] flex cursor-pointer justify-center rounded-xl p-1 duration-300 hover:text-white ${isOpen ? "" : "rotate-y-180"} ${isMobileResolution ? "hidden" : ""}`}
             onClick={() => handleOpen()}
           >
             <SvgSidebarHide />

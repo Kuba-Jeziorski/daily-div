@@ -11,7 +11,7 @@ export const Tags = ({ tags }: Props) => {
   }
 
   return (
-    <ul className="group mt-2 flex items-center gap-2 px-2 pb-2">
+    <ul className="group mt-2 hidden items-center gap-2 px-2 pb-2 lg:flex">
       {tags.map((tag) => {
         return (
           <p

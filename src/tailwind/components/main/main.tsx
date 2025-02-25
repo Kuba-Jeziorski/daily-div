@@ -7,9 +7,9 @@ export const Main = () => {
   const handleOpen = () => setIsOpen(!isOpen);
 
   return (
-    <main className="flex w-full pt-16">
-      <Sidebar isOpen={isOpen} handleOpen={handleOpen} />
-      <Content isOpen={isOpen} />
+    <main className="xs:pt-16 flex w-full pt-30">
+      <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} handleOpen={handleOpen} />
+      <Content isOpen={isOpen} setIsOpen={setIsOpen} />
     </main>
   );
 };
